@@ -144,5 +144,19 @@ namespace DAL
                 throw ex;
             }
         }
+
+        public bool ExisteRoles(int pIdUsuario)
+        {
+
+            bool existe = miContexto.rolAsignadoAUsuario.Any(rolAsignadoAUsuario => rolAsignadoAUsuario.idUsuario == pIdUsuario);
+
+            if (existe)
+                return true;
+            else
+                return false;
+        }
+        
+
+
     }
 }

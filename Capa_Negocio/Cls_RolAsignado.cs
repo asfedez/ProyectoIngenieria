@@ -88,5 +88,12 @@ namespace Capa_Logica_Negocio
             }
         }
 
+
+        public bool ExisteRoles(int IdUsuario)
+        {
+            return asignadoDAL.ExisteRoles(IdUsuario);
+        }
+
+
     }
 }

@@ -40,5 +40,16 @@ namespace Capa_Presentacion
             frmFacturaIngreso frmFacturaIngreso = new frmFacturaIngreso();
             frmFacturaIngreso.ShowDialog();
         }
+
+        private void permisosDeRolesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rolesAUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAsignarRolAUsuario frmAsignarRolAUsuario = new frmAsignarRolAUsuario();
+            frmAsignarRolAUsuario.ShowDialog();
+        }
     }
 }
